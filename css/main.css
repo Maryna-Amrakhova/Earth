@@ -1,0 +1,353 @@
+body {
+	margin: 0;
+	padding: 0; 
+	background-color: #f7fffb;
+	font-family: 'Montserrat', 'Domine';
+}
+
+.main-container {
+	margin: 0 auto; 
+	max-width: 1120px;
+	min-width: 320px; 
+}
+
+/* styles for header  */
+
+.header-container {
+	width: 100%;
+	padding: 70px 32px;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr; 
+	box-sizing: border-box; 
+}
+
+.menu-bar {
+	display: none;
+}
+
+.main-logo {
+	width: 60px;
+}
+
+.header-nav {
+	display: flex;
+	align-items: center;
+	font-family: Montserrat;
+}
+
+.header-link {
+	margin: 0 7px;
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 11px;
+	letter-spacing: 1px;
+}
+
+.header-link:hover {
+	color: #4c665b;
+}
+
+.header-social-media {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.header-social-icon {
+	margin: 0 8px;
+}
+
+.header-social-media:hover {
+	color: #4c665b;
+}
+
+.header-social-icon:hover {
+	color: #000;
+}
+
+/* styles for banner section*/
+
+.banner {
+	display: grid;
+	grid-template-columns: 5fr 6fr;
+	align-items: end;
+	padding: 32px;
+}
+
+.banner-img {
+	width: 100%; 
+}
+
+.banner-content {
+	padding-left: 70px;
+	font-family: Montserrat;
+	display: grid;
+	grid-template-areas: "header ."
+	"swans lake"; 
+}
+
+.content-main {
+	width: 265px;
+	font-size: 14px;
+	padding-left: 820px;
+	text-align: end;
+}
+
+.banner-img-container {
+	display: flex;
+	align-items: flex-end;
+}
+
+.banner-content-header {
+	font-size: 36px;
+	width: 280px;
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+	padding: 10px 0;
+	text-transform: uppercase;
+	grid-area: header; 
+}
+
+.banner-swans {
+	width: 230px;
+}
+
+.banner-swans-container {
+	grid-area: swans;
+}
+
+.banner-lake-container {
+	grid-area: lake;
+}
+
+.banner-content-img-container {
+	position: relative; 
+	display: flex;
+	align-items: flex-end;
+}
+
+.banner-bottom-text {
+	position: absolute;	
+	left: 30px; 
+	bottom: 25px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/*styles for intro section*/
+
+.intro {
+	padding: 32px 70px;
+	display: grid;
+	
+}
+
+.intro-header {
+	text-transform: uppercase;
+	font-size: 32px;
+	font-family: Montserrat;
+	margin-top: 16px;
+}
+
+.intro-text {
+	font-weight: lighter;
+	text-align: justify;
+	line-height: 140%;
+}
+
+#more {
+	display: none;
+}
+
+button {
+	width: 180px;
+	padding: 10px 15px;
+	border: #000 2px solid;
+	background: transparent;
+	transition: 0.5s;
+	cursor: pointer;
+	margin-left: auto;
+}
+
+button:hover {
+	transform: scale(1.2) translate(8px);
+}
+
+
+/*styles for subscribe section*/
+
+.subscribe {
+	margin: 32px;
+	background-color: #9ba56e;
+	display:  flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 0 50px;
+}
+
+.subscribe-header {
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 24px;
+	font-family: Montserrat;
+}
+
+.subscribe-input {
+	height: 50px;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.subscribe-mail {
+	width: 240px;
+}
+
+.subscribe-btn {
+	width: 170px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background-color: #EBEFEE;
+	border: none;
+	cursor: pointer;
+}
+
+/* styles for blog section*/
+
+.blog {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.blog-item {
+	padding: 24px;
+}
+
+.blog-img {
+	width: 100%;
+}
+
+.blog-img-container {
+	position: relative;
+}
+
+.blog-img-desc-container {
+	position: absolute;
+	bottom: -70px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.blog-img-desc {
+	width: 150px;
+	height: 140px;
+	background-color: rgba(236, 240, 239, 0.644);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: Montserrat;
+}
+
+.underline {
+	background-color: #000;
+	width: 60px;
+	height: 2px;
+	margin: 4px auto;
+	border: none;
+}
+
+.blog-desc-container {
+	margin-top: 90px;
+	font-weight: lighter;
+	line-height: 140%;
+	text-align: justify;
+	
+	max-height: 142px;
+	
+}
+	
+
+.blog-desc-container:hover {
+	white-space: normal;
+	overflow: visible;
+  	width: 100%;
+  	height: auto;
+  	cursor: pointer;
+  	transition: 0.3s;
+}
+
+.blog-desc-container button {
+	padding: 10px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline: none;
+	float: right;
+}
+
+/* styles for world section */
+
+.world {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.world-item {
+	padding: 24px;
+}
+
+.world-item-img {
+	width: 100%;
+}
+
+.world-item-description {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 24px;
+	font-family: Montserrat;
+}
+
+.world-item-description hr {
+
+	width: 150px;
+	height: 2px;
+	margin: 8px auto;
+	border: none;
+}
+
+/*styles for footer*/
+
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-top: 2px solid #000;
+	padding: 40px;
+}
+
+.footer-logo {
+	width: 140px;
+	margin-bottom: 40px;
+}
+
+.footer-copyright {
+	letter-spacing: 2px;
+}
+
